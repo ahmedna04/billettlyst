@@ -3,7 +3,7 @@ import { fetchEventByKeyword } from '../api/ticketmaster';
 import '../styles/home.css';
 
 function Home() {
-  
+
   const [events, setEvents] = useState([]);
   useEffect(() => {
     async function hentFestivaler() {
@@ -22,6 +22,8 @@ function Home() {
     }
   
     hentFestivaler();
+    console.log("Eventer:", events);
+
   }, []);
   return (
 
