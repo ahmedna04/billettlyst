@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import EventCard from '../komponenter/eventcard';
 import { useEffect, useState } from 'react';
 import { fetchEventByKeyword } from '../api/ticketmaster';
 import '../styles/home.css';
@@ -32,12 +32,7 @@ function Home() {
       <h1>Festivaler</h1>
       <section className="event-list">
       {events.map((event) => (
-  <article key={event.id}>
-    <Link to={`/event/${event.id}`}>
-      <h2>{event.name}</h2>
-      <p>{event.dates?.start?.localDate}</p>
-    </Link>
-  </article>
+  <EventCard key={event.id} event={event} />
 ))}
 
       </section>
