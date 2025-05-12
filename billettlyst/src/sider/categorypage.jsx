@@ -1,5 +1,5 @@
 function CategoryPage() {
-    return <h1>CategoryPage – Kategori-visning</h1>;
+    return <h1>CategoryPage</h1>;
   }
   export default CategoryPage;
   
