@@ -13,7 +13,6 @@ function App() {
     <Nav/>
       <Routes>
         <Route path="/" element={<Home />} />
-
         <Route path="/event/:id" element={<EventPage />} />
         <Route path="/category/:slug" element={<CategoryPage />} />
         <Route path="/dashboard" element={<Dashboard />} />

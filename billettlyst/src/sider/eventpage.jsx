@@ -4,18 +4,21 @@ const API_KEY = 'dW9FyNOAXIgM1BsAEXhrWIBJwVg34bin';
 
 function EventPage() {
 
+  
   const {id} = useParams();
 
   const [event, setEvent] = useState(null);
 
+ 
   useEffect(() => {
     async function hentEvent() {
+      // denne koden er lagt til for feilhåndtering i API. Altså for å finne feil. (try/catch)
       try {
         const response = await fetch(`https://app.ticketmaster.com/discovery/v2/events/${id}.json?apikey=${API_KEY}`);
         const data = await response.json();
         setEvent(data);
       } catch (error) {
-        console.error("Feil ved henting av event:", error);
+        console.error("Erro", error);
       }
     }
 
