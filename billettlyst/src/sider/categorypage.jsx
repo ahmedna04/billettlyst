@@ -1,5 +1,5 @@
 function CategoryPage() {
-    return <h1>eventkorta</h1>;
+    return <h1>eventkort</h1>;
   }
   export default CategoryPage;
   

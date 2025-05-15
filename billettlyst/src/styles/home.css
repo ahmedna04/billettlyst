@@ -1,0 +1,17 @@
+main {
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+h1, h2 {
+  margin-top: 2rem;
+}
+
+.event-list, .oslo-event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
