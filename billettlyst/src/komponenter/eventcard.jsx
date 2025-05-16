@@ -1,7 +1,15 @@
 import { Link } from 'react-router-dom';
 function EventCard({ event }) {
   return (
+    
     <article className="event-card">
+      {event.images?.[0]?.url && (
+  <img
+    src={event.images[0].url}
+    alt={event.name}
+    className="event-bilde"
+  />
+)}
 
       <Link to={`/event/${event.id}`}>
         <h2>{event.name}</h2>

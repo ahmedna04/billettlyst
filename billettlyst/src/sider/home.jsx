@@ -50,7 +50,7 @@ function Home() {
  
   return (
     <main>
-      <h1>Festivaler</h1>
+      <h1>Sommerens festivaler</h1>
 
       <section className="event-list">
         {events.map((event) => (
@@ -67,8 +67,8 @@ function Home() {
 
       {valgtBy && (
         <>
-          <h2>I {valgtBy} kan du se:</h2>
-
+        
+          <h2>Hva skjer i {valgtBy}</h2>
           <section className="oslo-event-list">
             {byEvents.map((event) => (
               <article key={event.id}>
