@@ -17,6 +17,10 @@ function App() {
         <Route path="/category/:slug" element={<CategoryPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
+      <footer>
+  <p>Data hentet fra <a href="https://developer.ticketmaster.com/" target="_blank" rel="noopener noreferrer">Ticketmaster API</a></p>
+  </footer>
+
     </>
   );
 }
